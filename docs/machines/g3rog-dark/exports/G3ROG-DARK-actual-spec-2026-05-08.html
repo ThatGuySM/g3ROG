@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ThatGuyᴼᴳ - G3ROG-Dark Actual Spec Sheet</title>
+  <meta name="generator" content="ChatGPT - semantic conversion from generated PDF">
+  <meta name="source-pdf" content="G3ROG-Dark-Actual-PC-Spec-Sheet-20260508-v2.pdf">
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --panel: #141823;
+      --panel2: #1b2130;
+      --text: #eef3ff;
+      --muted: #a9b5c8;
+      --line: #2d3548;
+      --accent: #62d6ff;
+      --accent2: #ff4fd8;
+      --good: #8df7bd;
+      --warn: #ffd166;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, rgba(98,216,255,.18), transparent 35%),
+                  radial-gradient(circle at top right, rgba(255,79,216,.12), transparent 32%),
+                  var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.5;
+    }
+    main { max-width: 1120px; margin: 0 auto; padding: 32px 20px 56px; }
+    header.hero {
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(20,24,35,.95), rgba(27,33,48,.88));
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.35);
+      margin-bottom: 24px;
+    }
+    .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 800; }
+    h1 { font-size: clamp(2rem, 5vw, 4.25rem); line-height: .95; margin: 12px 0 12px; letter-spacing: -.04em; }
+    h2 { font-size: 1.55rem; margin: 0 0 12px; }
+    h3 { font-size: 1.05rem; margin: 0 0 8px; color: var(--accent); }
+    p { margin: 0 0 12px; }
+    .subtitle { color: var(--muted); max-width: 900px; font-size: 1.08rem; }
+    .badges { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+    .badge {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--text);
+      font-size: .9rem;
+      font-weight: 700;
+    }
+    section {
+      border: 1px solid var(--line);
+      background: rgba(20,24,35,.82);
+      border-radius: 20px;
+      padding: 22px;
+      margin: 18px 0;
+      box-shadow: 0 10px 35px rgba(0,0,0,.22);
+    }
+    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+    .card {
+      grid-column: span 4;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.035);
+      border-radius: 16px;
+      padding: 16px;
+      min-height: 120px;
+    }
+    .card.wide { grid-column: span 6; }
+    .card.full { grid-column: 1 / -1; }
+    .stat { font-size: 1.85rem; font-weight: 900; letter-spacing: -.02em; }
+    .label { color: var(--muted); font-size: .82rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 800; }
+    table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 12px; }
+    th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 10px 12px; vertical-align: top; }
+    th { color: var(--accent); font-size: .82rem; text-transform: uppercase; letter-spacing: .08em; }
+    tr:last-child td { border-bottom: 0; }
+    ul { margin: 8px 0 0 20px; padding: 0; }
+    li { margin: 6px 0; }
+    code { background: rgba(255,255,255,.07); border: 1px solid var(--line); padding: .12em .35em; border-radius: 6px; color: var(--good); }
+    .note { color: var(--muted); font-size: .95rem; }
+    .warning { border-left: 4px solid var(--warn); padding-left: 14px; color: #fff1c1; }
+    footer { color: var(--muted); margin: 28px 4px 0; font-size: .9rem; }
+    @media (max-width: 820px) {
+      .card, .card.wide { grid-column: 1 / -1; }
+      header.hero { padding: 24px; }
+    }
+
+  </style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="eyebrow">Internal detected build record</div>
+    <h1>ThatGuyᴼᴳ - G3ROG-Dark Actual Spec Sheet</h1>
+  </header>
+
+<section id="summary">
+  <h2>Detected-State Spec Sheet</h2>
+  <p class="subtitle">Call Sign: <strong>G3ROG-DARK</strong> | Revision: 2026-05-08 v2 | Source: AIDA64 live system reports + build documentation. Captured on 2026-05-08 at 16:24. Private identifiers redacted for publication.</p>
+  <div class="grid">
+    <div class="card"><div class="label">Detected Platform</div><p>AMD Ryzen 7 9850X3D on ASUS ROG Crosshair X870E Dark Hero. This replaces the older 9800X3D planning note.</p></div>
+    <div class="card"><div class="label">Detected Graphics</div><p>ASUS ROG Astral GeForce RTX 5090 O32G White with 32GB-class VRAM reported by AIDA64/Windows.</p></div>
+    <div class="card"><div class="label">Detected Storage</div><p>2x Crucial T705 Gen5 NVMe + 2x Samsung 860 EVO 2TB SATA SSD. SMART status reported OK.</p></div>
+    <div class="card"><div class="stat">8C / 16T</div><div class="label">Ryzen 7 9850X3D</div></div>
+    <div class="card"><div class="stat">32GB</div><div class="label">RTX 5090 VRAM class</div></div>
+    <div class="card"><div class="stat">64GB</div><div class="label">DDR5 installed</div></div>
+  </div>
+</section>
+
+<section id="core-hardware">
+  <h2>Live Detected Core Hardware</h2>
+  <table>
+    <tbody>
+      <tr><th>Computer</th><td>G3ROG-DARK - private domain and local IP redacted for publication</td></tr>
+      <tr><th>Operating System</th><td>Microsoft Windows 11 Enterprise 10.0.26200.8328 (Win11 25H2 2025 Update)</td></tr>
+      <tr><th>CPU</th><td>AMD Ryzen 7 9850X3D - 8 cores / 16 threads, 4.7 GHz base, up to 5.6 GHz boost, 96 MB L3 cache, 120 W TDP, AM5.</td></tr>
+      <tr><th>Motherboard</th><td>ASUS ROG Crosshair X870E Dark Hero - AMD X870E chipset, AM5, ATX, 5x M.2, 4x SATA 6Gb/s, Realtek 10GbE + 5GbE, Wi-Fi 7.</td></tr>
+      <tr><th>BIOS</th><td>American Megatrends / ASUS BIOS 0804, release date 2026-04-09.</td></tr>
+      <tr><th>GPU</th><td>ASUS ROG Astral GeForce RTX 5090 O32G White - NVIDIA GeForce RTX 5090 reported with 32607 MB VRAM by AIDA64.</td></tr>
+      <tr><th>Integrated Graphics</th><td>AMD Radeon Graphics detected and enabled alongside the RTX 5090.</td></tr>
+      <tr><th>Memory</th><td>CORSAIR Dominator Titanium RGB DDR5 - 64GB total, 2x32GB, SKU CMP64GX5M2B6000Z30. AIDA64 reports current DDR5-6200 profile/timing set.</td></tr>
+      <tr><th>Cooling</th><td>ASUS ROG Ryujin III White Edition detected over USB; AIO pump reported around 2596 RPM in the snapshot.</td></tr>
+      <tr><th>Power Supply</th><td>CORSAIR HX1500i Platinum - detected over monitoring path; PSU fan reported 0 RPM and PSU draw around 200.91 W in the idle/light-load snapshot.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="memory">
+  <h2>Memory Detail</h2>
+  <table>
+    <tbody>
+      <tr><th>DIMM2</th><td>32 GB DDR5-6200 DDR5 SDRAM (32-38-38-80 @ 3100 MHz) (30-36-36-75 @ 2900 MHz) (28-34-34-70 @ 2733 MHz) (26-31-31-65 @ 2533 MHz) (22-27-27-55 @ 2133 MHz)</td></tr>
+      <tr><th>DIMM4</th><td>32 GB DDR5-6200 DDR5 SDRAM (32-38-38-80 @ 3100 MHz) (30-36-36-75 @ 2900 MHz) (28-34-34-70 @ 2733 MHz) (26-31-31-65 @ 2533 MHz) (22-27-27-55 @ 2133 MHz)</td></tr>
+      <tr><th>Active Timings</th><td>32-38-38-80, Command Rate 1T, Memory Bus 3100 MHz per AIDA64 hardware report.</td></tr>
+      <tr><th>Rated Kit Spec</th><td>DDR5-6000 / 6000 MT/s, CL30-36-36-76, 1.40 V, AMD EXPO and Intel XMP capable.</td></tr>
+      <tr><th>Note</th><td>The system is currently running above the kit's original DDR5-6000 spec. Great if stable; if weird boot/training issues show up, memory speed is one of the first places to sanity-check.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="storage">
+  <h2>Storage and Volume Layout</h2>
+  <h3>Physical Drives</h3>
+  <table>
+    <thead><tr><th>Device</th><th>Interface</th><th>Role / Note</th></tr></thead>
+    <tbody>
+      <tr><td>CT2000T705SSD3</td><td>NVMe / PCIe 5.0 x4</td><td>2TB Crucial T705 - likely OS / high-speed primary volume</td></tr>
+      <tr><td>CT1000T705SSD3</td><td>NVMe / PCIe 5.0 x4</td><td>1TB Crucial T705 - high-speed secondary / scratch / workload drive</td></tr>
+      <tr><td>Samsung SSD 860 EVO 2TB</td><td>SATA-III</td><td>2TB SATA SSD</td></tr>
+      <tr><td>Samsung SSD 860 EVO 2TB</td><td>SATA-III</td><td>2TB SATA SSD</td></tr>
+    </tbody>
+  </table>
+  <h3>Volumes</h3>
+  <table>
+    <thead><tr><th>Volume</th><th>Size</th><th>Free Space</th></tr></thead>
+    <tbody>
+      <tr><td>C:</td><td>1861.9 GB</td><td>1604.7 GB free</td></tr>
+      <tr><td>R:</td><td>931.5 GB</td><td>458.0 GB free</td></tr>
+      <tr><td>S:</td><td>1863.0 GB</td><td>746.4 GB free</td></tr>
+      <tr><td>T:</td><td>1863.0 GB</td><td>1295.2 GB free</td></tr>
+      <tr><td>Total</td><td>6519.4 GB</td><td>4104.3 GB free</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="display-network-usb">
+  <h2>Display, Network, and USB Reality</h2>
+  <table>
+    <tbody>
+      <tr><th>Display Adapters</th><td>AMD Radeon Graphics plus NVIDIA GeForce RTX 5090 detected.</td></tr>
+      <tr><th>Monitors</th><td>2x LG UltraGear+ displays and 2x Sceptre P30 30-inch ultrawides detected.</td></tr>
+      <tr><th>Network</th><td>Realtek PCIe 10GbE Family Controller active; Realtek PCIe 5GbE and MediaTek Wi-Fi 7 also detected. Local IP redacted for publication.</td></tr>
+      <tr><th>USB Load</th><td>AIDA64 sees a heavy USB stack: Arctis Nova Pro Wireless, SteelSeries Alias Pro, SteelSeries Arena 9, Stream Deck+ dock, Logitech StreamCam, Ryujin III, AURA LED controller, VeriMark IT fingerprint key, multiple USB hubs, and mass-storage readers.</td></tr>
+      <tr><th>Security</th><td>VeriMark IT Fingerprint Key detected. Earlier project notes list Benss/Windows Hello/FIDO fingerprint support; live report shows VeriMark IT specifically.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="thermal-power">
+  <h2>Thermal / Power Snapshot</h2>
+  <p class="note">This is not a stress-test result. It is a point-in-time AIDA64 sensor snapshot from the uploaded hardware report, useful as a baseline/reference only.</p>
+  <table>
+    <thead><tr><th>Sensor</th><th>Reported Value</th></tr></thead>
+    <tbody>
+      <tr><td>Motherboard</td><td>37 °C</td></tr>
+      <tr><td>CPU</td><td>39 °C</td></tr>
+      <tr><td>CPU Package</td><td>49 °C</td></tr>
+      <tr><td>VRM</td><td>46 °C</td></tr>
+      <tr><td>RTX 5090 GPU</td><td>33 °C</td></tr>
+      <tr><td>RTX 5090 Memory</td><td>44 °C</td></tr>
+      <tr><td>Crucial T705 2TB</td><td>54 °C</td></tr>
+      <tr><td>Crucial T705 1TB</td><td>44 °C</td></tr>
+      <tr><td>AIO Pump</td><td>2596 RPM</td></tr>
+      <tr><td>PSU Fan</td><td>0 RPM</td></tr>
+      <tr><td>PSU Draw</td><td>200.91 W</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="chassis-airflow">
+  <h2>Chassis and Airflow</h2>
+  <table>
+    <tbody>
+      <tr><th>Case</th><td>Fractal Design Meshify 3 XL Ambience Pro RGB White TG Clear Tint.</td></tr>
+      <tr><th>Case Capacity</th><td>567 x 245 x 515 mm; ATX/E-ATX class support; GPU clearance up to 514 mm; PSU clearance up to 230 mm; CPU cooler clearance up to 180/182 mm depending on panel.</td></tr>
+      <tr><th>Cooling Layout</th><td>Front 3x Momentum 14 ARGB Gen 2 PWM fans as intake; top-mounted 360 mm Ryujin III AIO as exhaust. Rear fan can stay omitted if it interferes with the motherboard screen/visual layout.</td></tr>
+      <tr><th>AIO Note</th><td>The Dark Hero manual explicitly wants water-cooling pump connectors on W_PUMP+ or AIO_PUMP. Prior move to AIO_PUMP lines up with that.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="notes">
+  <h2>Operational Notes / Gotchas</h2>
+  <ul>
+    <li>The uploaded AIDA64 reports are now the source of truth for the installed build. The older g3wactual spec sheet still listed the 4090/B650E/PCCOOLER setup and should be considered stale for this machine.</li>
+    <li>CPU is listed as Ryzen 7 9850X3D. AMD's current product listing confirms that model exists, so this is not just an AIDA typo from old 9800X3D naming.</li>
+    <li>Memory is running at DDR5-6200 with 32-38-38-80 timing. That is spicy but not automatically bad. Stability testing decides whether it stays king or gets demoted.</li>
+    <li>X870E Dark Hero M.2_2 shares bandwidth with the rear USB4 40Gbps ports. Avoid filling M.2_2 unless you intentionally accept that tradeoff.</li>
+    <li>Use the proper native high-power GPU cable path. No splitter shenanigans on an RTX 5090. That is how expensive smoke becomes a home fragrance.</li>
+    <li>Keep both AIDA64 source reports with this HTML/PDF. They are the receipts for what Windows actually detected on 2026-05-08.</li>
+  </ul>
+</section>
+
+<footer>
+  Converted from PDF to semantic HTML for easier review by Codex and other text/code tools. Generated 2026-05-08.
+</footer>
+</main>
+</body>
+</html>

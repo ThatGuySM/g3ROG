@@ -1,0 +1,28 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        exclude: ^(assets/banner\.png|assets/(gallery|images|social)/.*\.(png|jpe?g|mov|mp4)$|docs/.*\.pdf)$
+      - id: end-of-file-fixer
+        exclude: ^(\.nojekyll|bios/\.trash/)
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+        exclude: ^bios/\.trash/
+      - id: mixed-line-ending
+        args: [--fix=lf]
+        exclude: ^(scripts/.*\.ps1$|bios/\.trash/)
+      - id: check-yaml
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+        name: Gitleaks staged scan
+        stages: [pre-commit]
+      - id: gitleaks
+        alias: gitleaks-pre-push
+        name: Gitleaks full repository scan
+        entry: gitleaks git --redact --verbose
+        pass_filenames: false
+        stages: [pre-push]

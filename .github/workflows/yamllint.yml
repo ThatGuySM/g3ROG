@@ -1,0 +1,14 @@
+name: YAML Lint
+on: [push, pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+      - name: Install yamllint
+        run: pip install yamllint
+      - name: Lint workflow files
+        run: yamllint -c .yamllint.yml .github/workflows .pre-commit-config.yaml

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>G3ROG-DARK</title>
+  <meta name="generator" content="ChatGPT - semantic conversion from generated PDF">
+  <meta name="source-pdf" content="G3ROG-DARK-Friends-Showcase-Spec-Sheet-20260508-v3.pdf">
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --panel: #141823;
+      --panel2: #1b2130;
+      --text: #eef3ff;
+      --muted: #a9b5c8;
+      --line: #2d3548;
+      --accent: #62d6ff;
+      --accent2: #ff4fd8;
+      --good: #8df7bd;
+      --warn: #ffd166;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, rgba(98,216,255,.18), transparent 35%),
+                  radial-gradient(circle at top right, rgba(255,79,216,.12), transparent 32%),
+                  var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.5;
+    }
+    main { max-width: 1120px; margin: 0 auto; padding: 32px 20px 56px; }
+    header.hero {
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(20,24,35,.95), rgba(27,33,48,.88));
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.35);
+      margin-bottom: 24px;
+    }
+    .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 800; }
+    h1 { font-size: clamp(2rem, 5vw, 4.25rem); line-height: .95; margin: 12px 0 12px; letter-spacing: -.04em; }
+    h2 { font-size: 1.55rem; margin: 0 0 12px; }
+    h3 { font-size: 1.05rem; margin: 0 0 8px; color: var(--accent); }
+    p { margin: 0 0 12px; }
+    .subtitle { color: var(--muted); max-width: 900px; font-size: 1.08rem; }
+    .badges { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+    .badge {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--text);
+      font-size: .9rem;
+      font-weight: 700;
+    }
+    section {
+      border: 1px solid var(--line);
+      background: rgba(20,24,35,.82);
+      border-radius: 20px;
+      padding: 22px;
+      margin: 18px 0;
+      box-shadow: 0 10px 35px rgba(0,0,0,.22);
+    }
+    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+    .card {
+      grid-column: span 4;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.035);
+      border-radius: 16px;
+      padding: 16px;
+      min-height: 120px;
+    }
+    .card.wide { grid-column: span 6; }
+    .card.full { grid-column: 1 / -1; }
+    .stat { font-size: 1.85rem; font-weight: 900; letter-spacing: -.02em; }
+    .label { color: var(--muted); font-size: .82rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 800; }
+    table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 12px; }
+    th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 10px 12px; vertical-align: top; }
+    th { color: var(--accent); font-size: .82rem; text-transform: uppercase; letter-spacing: .08em; }
+    tr:last-child td { border-bottom: 0; }
+    ul { margin: 8px 0 0 20px; padding: 0; }
+    li { margin: 6px 0; }
+    code { background: rgba(255,255,255,.07); border: 1px solid var(--line); padding: .12em .35em; border-radius: 6px; color: var(--good); }
+    .note { color: var(--muted); font-size: .95rem; }
+    .warning { border-left: 4px solid var(--warn); padding-left: 14px; color: #fff1c1; }
+    footer { color: var(--muted); margin: 28px 4px 0; font-size: .9rem; }
+    @media (max-width: 820px) {
+      .card, .card.wide { grid-column: 1 / -1; }
+      header.hero { padding: 24px; }
+    }
+
+  </style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="eyebrow">Friends showcase spec sheet</div>
+    <h1>G3ROG-DARK</h1>
+  </header>
+
+<section id="hero-summary">
+  <h2>The Dark Hero build - share-safe showcase sheet</h2>
+  <p class="subtitle">A white-and-black ROG monster built around an X3D gaming CPU, an Astral RTX 5090, Gen5 NVMe, 64GB DDR5, and a four-display command wall. Subtle? Absolutely not. Effective? Oh yeah.</p>
+  <div class="badges">
+    <span class="badge">Friends Edition</span>
+    <span class="badge">AIDA64 Detected Build</span>
+    <span class="badge">Private Details Omitted</span>
+  </div>
+  <div class="grid" style="margin-top:18px">
+    <div class="card"><div class="label">CPU</div><div class="stat">Ryzen 7 9850X3D</div><p>8-core X3D / 96 MB L3</p></div>
+    <div class="card"><div class="label">GPU</div><div class="stat">ROG Astral RTX 5090</div><p>32GB VRAM / PCIe 5.0</p></div>
+    <div class="card"><div class="label">Memory</div><div class="stat">64GB DDR5-6200</div><p>Corsair Dominator</p></div>
+    <div class="card"><div class="label">Storage</div><div class="stat">6.52TB usable</div><p>Gen5 NVMe + SATA SSD</p></div>
+    <div class="card wide"><h3>One-Screen Brag Version</h3><p>Callsign: <strong>G3ROG-DARK</strong><br>OS: Windows 11 Enterprise<br>Theme: ROG / white build / cyberpunk war-room energy</p></div>
+    <div class="card wide"><h3>Share-Safe Version</h3><p>Serial numbers, MAC addresses, IPs, UUIDs, and private domain details are intentionally left out.</p></div>
+  </div>
+</section>
+
+<section id="core-spec">
+  <h2>Actual Detected Spec</h2>
+  <p class="note">The stuff that matters before the benchmark trash talk starts.</p>
+  <div class="grid">
+    <div class="card"><h3>CPU</h3><p><strong>AMD Ryzen 7 9850X3D</strong><br>8-core X3D gaming CPU</p><ul><li>Observed clock: 5.61 GHz snapshot</li><li>L3 cache: 96 MB</li><li>AM5 / Granite Ridge</li></ul></div>
+    <div class="card"><h3>GPU</h3><p><strong>ASUS ROG Astral RTX 5090 O32G White</strong><br>NVIDIA RTX 5090 - 32GB VRAM</p><ul><li>PCIe 5.0 x16 detected</li><li>GB202 GPU</li><li>Four-monitor battle station fuel</li></ul></div>
+    <div class="card"><h3>Board</h3><p><strong>ASUS ROG Crosshair X870E Dark Hero</strong><br>X870E enthusiast motherboard</p><ul><li>5x M.2 slots</li><li>Realtek 10GbE + 5GbE</li><li>Wi-Fi 7 / Bluetooth</li></ul></div>
+    <div class="card"><h3>Memory</h3><p><strong>64GB Corsair Dominator Titanium</strong><br>2x32GB DDR5 running DDR5-6200</p><ul><li>Timings: 32-38-38-80</li><li>Part: CMP64GX5M2B6000Z30</li><li>EXPO/XMP capable kit</li></ul></div>
+    <div class="card"><h3>Cooling</h3><p><strong>ROG Ryujin III 360 ARGB</strong><br>360mm AIO liquid cooler</p><ul><li>AIO pump: 2596 RPM snapshot</li><li>CPU: 39 C snapshot</li><li>CPU package: 49 C snapshot</li></ul></div>
+    <div class="card"><h3>Power</h3><p><strong>Corsair HX1500i Platinum</strong><br>1500W fully modular PSU</p><ul><li>80 PLUS Platinum class</li><li>ATX 3.0 / PCIe 5.0 build class</li><li>PSU fan: 0 RPM snapshot</li></ul></div>
+  </div>
+</section>
+
+<section id="command-center">
+  <h2>Command Center Loadout</h2>
+  <p class="note">The part where one monitor turned into four and storage became a lifestyle choice.</p>
+  <div class="grid">
+    <div class="card wide">
+      <h3>Storage Layout</h3>
+      <p><strong>6.52TB formatted / 4.10TB free at report time</strong></p>
+      <table>
+        <thead><tr><th>Volume</th><th>Device</th><th>Size</th><th>Free</th></tr></thead>
+        <tbody>
+          <tr><td>C:</td><td>Crucial T705 2TB Gen5 NVMe</td><td>1,861.9 GB</td><td>1,604.7 GB free</td></tr>
+          <tr><td>R:</td><td>Crucial T705 1TB Gen5 NVMe</td><td>931.5 GB</td><td>458.0 GB free</td></tr>
+          <tr><td>S:</td><td>Samsung 860 EVO 2TB SATA SSD</td><td>1,863.0 GB</td><td>746.4 GB free</td></tr>
+          <tr><td>T:</td><td>Samsung 860 EVO 2TB SATA SSD</td><td>1,863.0 GB</td><td>1,295.2 GB free</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Physical drives: 2x Crucial T705 Gen5 NVMe + 2x Samsung 860 EVO 2TB SATA SSD.</p>
+    </div>
+    <div class="card wide">
+      <h3>Display Wall</h3>
+      <ul>
+        <li><strong>2x LG UltraGear+ 49-inch DQHD</strong> - 5120 x 1440 class / 240Hz class</li>
+        <li><strong>2x Sceptre P30 30-inch Ultrawide</strong> - 2560 x 1080 class / 200Hz class</li>
+      </ul>
+      <h3 style="margin-top:18px">Audio / Stream / USB Ecosystem</h3>
+      <ul>
+        <li>SteelSeries Alias Pro XLR + mixer</li>
+        <li>SteelSeries Arena 9 + Arctis Nova Pro</li>
+        <li>Elgato Stream Deck+ / Stream ops gear</li>
+        <li>Logitech StreamCam</li>
+        <li>ROG Spatha X + Scope NX TKL</li>
+      </ul>
+      <p><strong>Network:</strong> 10GbE active + 5GbE + Wi-Fi 7 available</p>
+    </div>
+  </div>
+</section>
+
+<section id="thermal-snapshot">
+  <h2>AIDA64 Report Check - Thermal Snapshot</h2>
+  <p class="note">This is a report-time snapshot, not a full stress test. Still: the machine was behaving like it had manners.</p>
+  <div class="grid">
+    <div class="card"><div class="label">Motherboard</div><div class="stat">37 C</div></div>
+    <div class="card"><div class="label">CPU</div><div class="stat">39 C</div></div>
+    <div class="card"><div class="label">CPU Package</div><div class="stat">49 C</div></div>
+    <div class="card"><div class="label">RTX 5090 GPU</div><div class="stat">33 C</div></div>
+    <div class="card"><div class="label">GPU Memory</div><div class="stat">44 C</div></div>
+    <div class="card"><div class="label">Crucial T705 2TB</div><div class="stat">54 C</div></div>
+    <div class="card"><div class="label">Crucial T705 1TB</div><div class="stat">44 C</div></div>
+    <div class="card"><div class="label">PSU Temp</div><div class="stat">50-51 C</div></div>
+  </div>
+  <h3>Power Snapshot</h3>
+  <table>
+    <thead><tr><th>Sensor</th><th>Reading</th></tr></thead>
+    <tbody>
+      <tr><td>PSU Draw</td><td>200.91 W</td></tr>
+      <tr><td>CPU Package</td><td>60.58 W</td></tr>
+      <tr><td>RTX 5090</td><td>63.91 W</td></tr>
+      <tr><td>GPU 12VHPWR</td><td>54.25 W</td></tr>
+    </tbody>
+  </table>
+  <p class="warning"><strong>Friendly translation:</strong> This is a 5090-class, X3D-powered, four-screen, Gen5-storage monster with enough USB/audio gear hanging off it to make Windows Device Manager consider a career change. Private identifiers omitted. Bragging rights preserved.</p>
+</section>
+
+<section id="share-safe-rollup">
+  <h2>Share-Safe Full Spec Rollup</h2>
+  <p class="note">Copy-paste friendly summary with the boring-private stuff removed.</p>
+  <table>
+    <tbody>
+      <tr><th>Machine</th><td>G3ROG-DARK</td><th>Primary NVMe</th><td>Crucial T705 2TB PCIe 5.0 x4</td></tr>
+      <tr><th>OS</th><td>Windows 11 Enterprise</td><th>Secondary NVMe</th><td>Crucial T705 1TB PCIe 5.0 x4</td></tr>
+      <tr><th>CPU</th><td>AMD Ryzen 7 9850X3D</td><th>SATA SSDs</th><td>2x Samsung 860 EVO 2TB</td></tr>
+      <tr><th>GPU</th><td>ASUS ROG Astral RTX 5090 O32G White - 32GB</td><th>Formatted Storage</th><td>6519.4 GB total / 4104.3 GB free</td></tr>
+      <tr><th>Motherboard</th><td>ASUS ROG Crosshair X870E Dark Hero</td><th>Displays</th><td>2x LG UltraGear+ 49-inch + 2x Sceptre P30</td></tr>
+      <tr><th>Chipset</th><td>AMD X870E</td><th>Network</th><td>Realtek 10GbE, Realtek 5GbE, MediaTek Wi-Fi 7</td></tr>
+      <tr><th>Memory</th><td>64GB Corsair Dominator Titanium DDR5-6200</td><th>Audio</th><td>SteelSeries Alias Pro, Arena 9, Nova Pro Wireless</td></tr>
+      <tr><th>Cooler</th><td>ASUS ROG Ryujin III 360 ARGB AIO</td><th>Control</th><td>Elgato Stream Deck+ and stream peripherals</td></tr>
+      <tr><th>PSU</th><td>Corsair HX1500i Platinum 1500W</td><th>Security</th><td>Windows Hello / VeriMark fingerprint key</td></tr>
+    </tbody>
+  </table>
+  <p class="note">This HTML is intentionally share-safe. It excludes serial numbers, motherboard serial, MAC address, raw local IP, UUID/GUID, and private domain details from the original reports.</p>
+</section>
+
+<footer>
+  Converted from PDF to semantic HTML for easier review by Codex and other text/code tools. Generated 2026-05-08.
+</footer>
+</main>
+</body>
+</html>

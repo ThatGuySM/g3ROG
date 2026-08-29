@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>G3ROG-DARK Spec</title>
+  <meta name="description" content="Share-safe G3ROG-DARK hardware, firmware, storage, display, and validation summary from the sanitized 2026-05-09 AIDA64 source.">
+  <style>
+    :root { color-scheme: dark; --bg:#080b12; --card:#111827; --text:#e5f3ff; --muted:#9fb3c8; --line:#284055; --accent:#62d6ff; }
+    body { margin:0; font-family: Inter, Segoe UI, Arial, sans-serif; background: radial-gradient(circle at top, #142033, var(--bg)); color:var(--text); line-height:1.6; }
+    main { width:min(1100px, calc(100% - 32px)); margin:0 auto; padding:48px 0; }
+    h1, h2 { line-height:1.15; }
+    h1 { font-size:clamp(2.2rem, 7vw, 5rem); margin:0 0 8px; }
+    h2 { margin-top:36px; color:var(--accent); }
+    .lede, .muted { color:var(--muted); }
+    .card { border:1px solid var(--line); background:rgba(17,24,39,.82); border-radius:18px; padding:22px; margin:18px 0; box-shadow:0 20px 80px rgba(0,0,0,.25); }
+    table { width:100%; border-collapse:collapse; overflow:hidden; border-radius:12px; }
+    th, td { border-bottom:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top; }
+    th { color:#c7edff; background:#0d1725; }
+    a { color:var(--accent); }
+    ul { padding-left:1.2rem; }
+    code { color:#c7edff; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="muted">Snapshot date: 2026-05-09 · Source: sanitized AIDA64 Report <code>AIDA64-Report-20260509_v2</code></p>
+    <h1>G3ROG-DARK Spec</h1>
+    <p class="lede">Share-safe hardware and validation summary for the current g3ROG flagship. The 2026-05-09 source confirms the corrected Ryzen 7 9850X3D topology: 8 cores and 16 logical processors after SMT was restored.</p>
+
+    <section class="card">
+      <h2>Core Hardware</h2>
+      <table>
+        <tr><th>Component</th><th>Confirmed detail</th></tr>
+        <tr><td>CPU</td><td>AMD Ryzen 7 9850X3D, Granite Ridge, 8 cores / 16 threads</td></tr>
+        <tr><td>Motherboard</td><td>ASUS ROG Crosshair X870E Dark Hero, BIOS 0804, AGESA ComboAm5PI 1.3.0.1</td></tr>
+        <tr><td>Memory</td><td>64 GB Corsair DDR5, running DDR5-6200 CL32-38-38-80 1T</td></tr>
+        <tr><td>GPU</td><td>ASUS ROG Astral RTX 5090 White, 32 GB GDDR7, PCIe 5.0 x16 @ x16</td></tr>
+        <tr><td>Storage</td><td>Crucial T705 2 TB, Crucial T705 1 TB, 2 x Samsung 860 EVO 2 TB</td></tr>
+        <tr><td>Displays</td><td>2 x LG UltraGear+ and 2 x Sceptre P30; desktop snapshot 5120 x 1440 @ 240 Hz</td></tr>
+        <tr><td>Network</td><td>MediaTek Wi-Fi 7, Realtek RTL8127 10GbE, Realtek RTL8126 5GbE</td></tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Confirmed Platform State</h2>
+      <ul>
+        <li>SMT is restored and working; Windows sees 16 logical processors.</li>
+        <li>UEFI boot, Secure Boot, and TPM 2.0 are active.</li>
+        <li>Report-level SMART status is OK.</li>
+        <li>Both AMD integrated graphics and the RTX 5090 are active, but the report does not map each display to a specific GPU.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Known Quirks / Verify Later</h2>
+      <ul>
+        <li>Validate DDR5-6200 CL32 1T under long-session and cold-boot conditions.</li>
+        <li>Manually confirm M.2 slot placement because SMBIOS slot occupancy does not fully match the detected NVMe inventory.</li>
+        <li>Check whether the Samsung 860 EVO historical C7 CRC Error Count continues increasing.</li>
+        <li>Confirm the RTX 5090 remains PCIe 5.0 x16 under GPU load.</li>
+        <li>Verify 10GbE link negotiation with the actual network gear; capture showed 2500 Mbps.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Related Documents</h2>
+      <ul>
+        <li><a href="../specs/G3ROG-DARK-current-spec-2026-05-09.md">Markdown spec</a></li>
+        <li><a href="../../../aida64/README.md">AIDA64 privacy notes</a></li>
+        <li><a href="../bios-settings.md">BIOS settings</a></li>
+        <li><a href="../validation/stability-validation-2026-05-09.md">Stability validation plan</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.pre-commit-cache/
+
+# Build/Artifacts
+dist/
+build/
+*.zip
+
+# Local scratch files
+*.tmp
+*.bak
+*.orig
+*.code-workspace
+
+# Local working drafts kept outside the published docs set
+.local/
+
+# Local archive/scratch folders
+**/.trash/
+cleanup/
+
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.*
+secrets.*
+
+# Raw operational collections and generated sensitive reports
+logs/audits/**
+!logs/audits/README.md
+*.log
+reports/raw/
+reports/private/
+private/
+backups/
+backup/
+*.backup
+
+# Browser and machine-local artifacts
+browser-data/
+browser-profile/
+Bookmarks
+Cookies
+History
+Login Data
+Web Data
+*.har
+config.local.*
+*.local.json
+*.local.yaml
+*.local.yml
+
+# Generated public-site staging directory
+_site/
