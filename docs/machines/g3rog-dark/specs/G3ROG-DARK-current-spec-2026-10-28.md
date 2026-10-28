@@ -1,7 +1,9 @@
 # G3ROG-DARK Current Spec
 
-**Snapshot date:** 2026-10-28  
-**Source:** live Windows inventory plus the verified firmware, driver, servicing, and health-maintenance session completed on the snapshot date  
+**Snapshot date:** 2026-10-28
+
+**Source:** live Windows inventory plus the verified firmware, driver, servicing, and health-maintenance session completed on the snapshot date
+
 **Privacy posture:** public, share-safe summary; hostnames, account names, addresses, device identifiers, and raw logs are intentionally omitted
 
 ## Executive Summary
