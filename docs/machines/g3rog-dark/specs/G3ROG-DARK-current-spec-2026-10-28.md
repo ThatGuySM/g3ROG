@@ -63,6 +63,18 @@ The maintenance pass did not use registry cleaners, blanket filesystem compressi
 - The retired Kali WSL distribution and its Store package were removed, reclaiming approximately 29.84 GB.
 - SteelSeries GG/Sonar/Prism, Corsair iCUE, Elgato Stream Deck, and Logitech G HUB remain required parts of the active peripheral stack.
 
+## Desk and Peripheral Stack
+
+| Role | Device |
+| --- | --- |
+| Headset | SteelSeries Arctis Nova Pro Wireless |
+| Microphone | SteelSeries Alias Pro |
+| Surround audio | SteelSeries Arena 9 |
+| Camera | Logitech StreamCam |
+| Controls / dock | Elgato Stream Deck+ dock |
+
+These are public build/showcase details. Device identifiers and private configuration remain excluded.
+
 ## Historical Baseline and Remaining Validation
 
 The May 2026 AIDA64-derived documents remain the detailed thermal, timing, and sensor baseline. This October snapshot supersedes them only for current firmware, drivers, software, health, and operating-state claims.

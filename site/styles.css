@@ -342,6 +342,10 @@ h1 {
   padding: 20px;
 }
 
+.peripherals-grid {
+  margin-top: 14px;
+}
+
 .spec-card.accent-cyan {
   border-top: 3px solid var(--cyan);
 }

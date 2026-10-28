@@ -1,9 +1,9 @@
-# G3ROG-DARK - Actual Detected Spec
+# G3ROG-DARK - Sanitized Detected Snapshot
 
 Snapshot date: 2026-05-08 showcase baseline, refreshed with 2026-05-09 sanitized AIDA64 source notes
-Audience: internal repo reference / maintenance
+Audience: sanitized maintenance reference
 
-This page is the markdown companion to the detailed HTML export. It keeps the useful detected hardware facts visible in GitHub without requiring the PDF or HTML view. For the current firmware, driver, servicing, and operating-state source of truth, see [G3ROG-DARK current spec](G3ROG-DARK-current-spec-2026-10-28.md).
+This page is a sanitized maintenance snapshot. It keeps useful detected hardware facts visible in GitHub without raw reports, serials, MAC addresses, local IPs, private domains, UUIDs, profile paths, or license details. For the current firmware, driver, servicing, and operating-state source of truth, see [G3ROG-DARK current spec](G3ROG-DARK-current-spec-2026-10-28.md).
 
 ## Live Detected Core Hardware
 

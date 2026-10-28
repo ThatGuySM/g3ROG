@@ -43,6 +43,7 @@
 | Case | Fractal Design Meshify 3 XL Ambience Pro RGB White TG Clear Tint |
 | Displays | 2x LG UltraGear 49-inch class and 2x Sceptre P30 ultrawides |
 | Network | Realtek 10GbE active at a 2.5 Gbps link, expected for the 2 Gbps service path; Realtek 5GbE and Wi-Fi 7 available |
+| Desk stack | SteelSeries Arctis Nova Pro Wireless, SteelSeries Alias Pro, SteelSeries Arena 9, Elgato Stream Deck+ dock, Logitech StreamCam |
 
 ## Baseline Snapshot
 

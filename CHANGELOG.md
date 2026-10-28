@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Added a share-safe 2026-10-28 G3ROG-DARK current-spec snapshot covering BIOS 1103, chipset and graphics drivers, Windows servicing health, storage health, WSL cleanup, and the mixed-GPU monitor posture
+- Added share-safe desk-stack and published fiber-speed highlights to the current machine page and public showcase
 - Promoted the repo into the broader `g3ROG` machine dossier with `docs/machines/` as the new per-machine structure
 - Added the active `G3ROG-DARK` machine page, share-safe markdown spec, detailed detected markdown spec, and HTML exports
 - Added `G3ROG-DARK` gallery photos from the May 8, 2026 chassis shoot
@@ -17,6 +18,7 @@ All notable changes to this project will be documented in this file.
 
 - Promoted the October 2026 maintenance snapshot to the current public entrypoint while retaining the May 2026 AIDA64 documents as the detailed thermal, timing, and sensor baseline
 - Updated the machine page, BIOS notes, validation matrix, docs navigation, and public showcase for the verified post-maintenance state
+- Reworded the May detected-state companion documents as sanitized snapshots and removed internal-source framing
 - Reworked the root README from a single-machine audit page into a multi-machine build dossier
 - Updated `docs/LATEST.md`, `docs/README.md`, and `docs/GALLERY.md` so the current flagship is `G3ROG-DARK`
 - Reframed the April 2026 `g3ROG-actual` docs as historical pre-rebuild records
