@@ -2,6 +2,23 @@
 
 **Purpose:** track validation needed after the 2026-05-09 sanitized AIDA64 source confirmed the corrected SMT / CPU topology state.
 
+## 2026-10-28 Maintenance Gate
+
+The October maintenance pass adds a newer operating-state checkpoint without replacing the May sensor baseline.
+
+| Area | Verified result |
+| --- | --- |
+| Firmware | BIOS 1103 installed; saved profile restored |
+| Chipset | AMD Chipset Software 8.09.28.1124 installed |
+| Graphics | RTX 5090 and AMD iGPU both report OK; NVIDIA 621.01 active |
+| Devices | All present Plug and Play devices report OK |
+| Storage | All physical disks report Healthy / OK; TRIM enabled |
+| Windows servicing | No available updates; SFC clean; DISM repaired and final component-store check clean |
+| Hardware errors | No WHEA hardware-error events found in the reviewed window |
+| Network | Realtek 10GbE controller linked at 2.5 Gbps, expected for the 2 Gbps service path |
+
+These checks establish firmware, driver, device-enumeration, storage-health, and Windows-integrity health. They do not convert the pending long-duration stress tests below into passes.
+
 ## Current Baseline
 
 The latest sanitized report shows G3ROG-DARK broadly healthy at capture time: SMT is working, Secure Boot is enabled, TPM 2.0 is present, the RTX 5090 is linked at PCIe 5.0 x16, report-level SMART status is OK, and major temperatures are reasonable for an idle or light-load snapshot.

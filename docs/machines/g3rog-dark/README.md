@@ -6,8 +6,9 @@
 
 ## Start Here
 
-- [Current source-of-truth spec](specs/G3ROG-DARK-current-spec-2026-05-09.md)
-- [Current source-of-truth spec HTML](exports/G3ROG-DARK-current-spec-2026-05-09.html)
+- [Current source-of-truth spec](specs/G3ROG-DARK-current-spec-2026-10-28.md)
+- [May 2026 AIDA64 source-of-truth spec](specs/G3ROG-DARK-current-spec-2026-05-09.md)
+- [May 2026 current-spec HTML export](exports/G3ROG-DARK-current-spec-2026-05-09.html)
 - [BIOS settings](bios-settings.md)
 - [Stability validation plan](validation/stability-validation-2026-05-09.md)
 - [AIDA64 source notes](../../aida64/README.md)
@@ -22,9 +23,9 @@
 | Field | Value |
 | --- | --- |
 | Call sign | G3ROG-DARK |
-| Snapshot date | 2026-05-09 source update, original showcase photos from 2026-05-08 |
+| Snapshot date | 2026-10-28 maintenance refresh; original showcase photos from 2026-05-08 |
 | Role | Current flagship / daily driver |
-| Source | Sanitized AIDA64 Report `AIDA64-Report-20260509_v2`, build notes, and exported spec sheets |
+| Source | Live share-safe Windows inventory and verified maintenance results; May AIDA64 report retained as the detailed sensor baseline |
 | Public posture | Showcase-first, private identifiers omitted |
 
 ## Core Spec
@@ -33,7 +34,7 @@
 | --- | --- |
 | CPU | AMD Ryzen 7 9850X3D, 8 cores / 16 threads, 96 MB L3 cache |
 | Motherboard | ASUS ROG Crosshair X870E Dark Hero |
-| BIOS | ASUS / American Megatrends 0804, release date 2026-04-09 |
+| BIOS | ASUS / American Megatrends 1103, firmware date 2026-09-18; installed and profile-restored 2026-10-28 |
 | GPU | ASUS ROG Astral GeForce RTX 5090 O32G White |
 | Memory | 64GB Corsair Dominator Titanium, observed DDR5-6200 |
 | Storage | Crucial T705 2TB, Crucial T705 1TB, 2x Samsung 860 EVO 2TB |
@@ -41,7 +42,7 @@
 | PSU | Corsair HX1500i Platinum 1500W |
 | Case | Fractal Design Meshify 3 XL Ambience Pro RGB White TG Clear Tint |
 | Displays | 2x LG UltraGear 49-inch class and 2x Sceptre P30 ultrawides |
-| Network | Realtek 10GbE active, Realtek 5GbE and Wi-Fi 7 available |
+| Network | Realtek 10GbE active at a 2.5 Gbps link, expected for the 2 Gbps service path; Realtek 5GbE and Wi-Fi 7 available |
 
 ## Baseline Snapshot
 
@@ -72,6 +73,7 @@ These values are point-in-time idle/light-load baseline readings from the upload
 - The detailed HTML and markdown are useful for maintenance, audits, and future comparison.
 - The detailed source contains operational context. Keep it reviewed for private details before publishing outside the repo.
 - SMT is restored to Auto / enabled; the 2026-05-09 sanitized source confirms 8 physical cores and 16 logical processors.
+- The 2026-10-28 maintenance gate confirmed BIOS 1103, AMD chipset 8.09.28.1124, NVIDIA 621.01, healthy storage, clean SFC/DISM results, and no available Windows updates.
 - Memory was observed at DDR5-6200 with 32-38-38-80 1T timing. Keep stability testing notes with this machine if that profile stays.
 - Exact M.2 physical slot mapping still needs verification because SMBIOS slot occupancy does not fully match the detected NVMe inventory.
 - One Samsung 860 EVO has a high historical C7 CRC counter; check whether it continues increasing before blaming the SSD itself.

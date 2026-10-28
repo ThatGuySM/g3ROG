@@ -22,7 +22,7 @@ The current flagship is **G3ROG-DARK**, a May 2026 Dark Hero / RTX 5090 build. T
 - [G3ROG web showcase](https://thatguysm.github.io/g3ROG/)
 - [Latest published entrypoint](docs/LATEST.md)
 - [G3ROG-DARK machine page](docs/machines/g3rog-dark/README.md)
-- [G3ROG-DARK current spec](docs/machines/g3rog-dark/specs/G3ROG-DARK-current-spec-2026-05-09.md)
+- [G3ROG-DARK current spec](docs/machines/g3rog-dark/specs/G3ROG-DARK-current-spec-2026-10-28.md)
 - [G3ROG-DARK BIOS settings](docs/machines/g3rog-dark/bios-settings.md)
 - [G3ROG-DARK stability validation](docs/machines/g3rog-dark/validation/stability-validation-2026-05-09.md)
 - [G3ROG-DARK friends showcase HTML](docs/machines/g3rog-dark/exports/G3ROG-DARK-showcase-spec-2026-05-08.html)
@@ -38,7 +38,8 @@ The current flagship is **G3ROG-DARK**, a May 2026 Dark Hero / RTX 5090 build. T
 
 This repo is a **published system snapshot and build journal**, not a live telemetry feed.
 
-- Current flagship snapshot: **G3ROG-DARK**, captured 2026-05-08 from AIDA64-backed reports and build notes.
+- Current flagship snapshot: **G3ROG-DARK**, refreshed 2026-10-28 from live Windows inventory and a verified firmware, driver, servicing, and health-maintenance pass.
+- Detailed May 2026 AIDA64 reports remain preserved as the thermal, timing, and sensor baseline.
 - Historical snapshot: **g3ROG-actual**, refreshed 2026-04-16 before the rebuild path began.
 - Future expansion: the rebuilt hand-me-down machine can live beside these as its own machine page once its final call sign and parts list settle.
 
@@ -64,7 +65,7 @@ Keep public pages share-safe. Raw reports, serial numbers, MAC addresses, UUIDs,
 | Cooling | ASUS ROG Ryujin III 360 ARGB AIO |
 | PSU | Corsair HX1500i Platinum 1500W |
 | Displays | 2x LG UltraGear 49-inch class + 2x Sceptre P30 ultrawides |
-| Network | 10GbE active, 5GbE and Wi-Fi 7 available |
+| Network | Realtek 10GbE controller active at a 2.5 Gbps link, matching the 2 Gbps service path; 5GbE and Wi-Fi 7 also available |
 
 ## Repository Layout
 

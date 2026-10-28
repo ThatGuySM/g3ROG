@@ -6,16 +6,15 @@ Use this page in the README and external links so the repo can evolve without br
 ## Current Published Snapshot
 
 - Machine: [G3ROG-DARK](machines/g3rog-dark/README.md)
-- Snapshot date: 2026-05-09
-- Status: Current flagship build record with SMT restoration confirmed
-- Source: Sanitized AIDA64 Report `AIDA64-Report-20260509_v2`, build notes, and generated spec exports
+- Snapshot date: 2026-10-28
+- Status: Current flagship build record with BIOS 1103, AMD chipset 8.09.28.1124, current driver state, and Windows health checks verified
+- Source: Live share-safe Windows inventory and verified maintenance results; May 2026 AIDA64 documents remain the detailed sensor baseline
 - Public posture: share-safe by default, with detailed internal companion docs kept nearby
 
 ## Current Links
 
 - [G3ROG-DARK machine page](machines/g3rog-dark/README.md)
-- [Current G3ROG-DARK spec](machines/g3rog-dark/specs/G3ROG-DARK-current-spec-2026-05-09.md)
-- [Current G3ROG-DARK spec HTML](machines/g3rog-dark/exports/G3ROG-DARK-current-spec-2026-05-09.html)
+- [Current G3ROG-DARK spec](machines/g3rog-dark/specs/G3ROG-DARK-current-spec-2026-10-28.md)
 - [BIOS settings](machines/g3rog-dark/bios-settings.md)
 - [Stability validation plan](machines/g3rog-dark/validation/stability-validation-2026-05-09.md)
 - [AIDA64 source notes](aida64/README.md)
@@ -23,6 +22,8 @@ Use this page in the README and external links so the repo can evolve without br
 - [Detailed actual spec HTML](machines/g3rog-dark/exports/G3ROG-DARK-actual-spec-2026-05-08.html)
 - [Share-safe markdown spec](machines/g3rog-dark/specs/G3ROG-DARK-showcase-spec-2026-05-08.md)
 - [Detailed markdown spec](machines/g3rog-dark/specs/G3ROG-DARK-actual-spec-2026-05-08.md)
+- [May 2026 AIDA64 source-of-truth spec](machines/g3rog-dark/specs/G3ROG-DARK-current-spec-2026-05-09.md)
+- [May 2026 current-spec HTML export](machines/g3rog-dark/exports/G3ROG-DARK-current-spec-2026-05-09.html)
 - [Machine index](machines/README.md)
 - [Docs hub](README.md)
 
@@ -37,7 +38,8 @@ Use this page in the README and external links so the repo can evolve without br
 ## Reading Guide
 
 - Start with the G3ROG-DARK machine page for the current build.
-- Use the current G3ROG-DARK spec for the 2026-05-09 SMT-confirmed source of truth.
+- Use the current G3ROG-DARK spec for the 2026-10-28 firmware, driver, servicing, and operating-state source of truth.
+- Use the May 2026 AIDA64 spec for the detailed thermal, memory-timing, and sensor baseline.
 - Use the BIOS and validation pages for follow-up checks after firmware or memory-profile changes.
 - Use the friends showcase HTML when sharing the machine with people who just want the good version.
 - Use the detailed spec pages for maintenance, future audits, and upgrade comparisons.

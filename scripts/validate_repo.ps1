@@ -84,6 +84,8 @@ $requiredFiles = @(
     "docs/LATEST.md",
     "docs/machines/README.md",
     "docs/machines/g3rog-dark/README.md",
+    "docs/machines/g3rog-dark/specs/G3ROG-DARK-current-spec-2026-10-28.md",
+    "docs/machines/g3rog-dark/specs/G3ROG-DARK-current-spec-2026-05-09.md",
     "docs/machines/g3rog-dark/specs/G3ROG-DARK-showcase-spec-2026-05-08.md",
     "docs/machines/g3rog-dark/specs/G3ROG-DARK-actual-spec-2026-05-08.md",
     "docs/machines/g3rog-dark/exports/G3ROG-DARK-showcase-spec-2026-05-08.html",
@@ -146,6 +148,7 @@ $readmeChecks = @(
     "[Latest published entrypoint](docs/LATEST.md)",
     "[Documentation hub](docs/README.md)",
     "[G3ROG-DARK machine page](docs/machines/g3rog-dark/README.md)",
+    "[G3ROG-DARK current spec](docs/machines/g3rog-dark/specs/G3ROG-DARK-current-spec-2026-10-28.md)",
     "Machine Roster"
 )
 
@@ -161,12 +164,14 @@ $docsHubChecks = @(
 $latestChecks = @(
     "stable entrypoint",
     "[G3ROG-DARK machine page](machines/g3rog-dark/README.md)",
+    "[Current G3ROG-DARK spec](machines/g3rog-dark/specs/G3ROG-DARK-current-spec-2026-10-28.md)",
     "[Share-safe friends showcase HTML](machines/g3rog-dark/exports/G3ROG-DARK-showcase-spec-2026-05-08.html)",
     "[g3ROG-actual machine page](machines/g3rog-actual/README.md)"
 )
 
 $darkMachineChecks = @(
     "G3ROG-DARK",
+    "[Current source-of-truth spec](specs/G3ROG-DARK-current-spec-2026-10-28.md)",
     "[Share-safe friends showcase HTML](exports/G3ROG-DARK-showcase-spec-2026-05-08.html)",
     "[Detailed markdown spec](specs/G3ROG-DARK-actual-spec-2026-05-08.md)",
     "![G3ROG-DARK angled chassis photo](../../../assets/gallery/g3rog-dark/g3rog-dark-angled-chassis-2026-05-08.jpeg)",
@@ -214,6 +219,7 @@ $markdownFilesToValidate = @(
     "docs/LATEST.md",
     "docs/machines/README.md",
     "docs/machines/g3rog-dark/README.md",
+    "docs/machines/g3rog-dark/specs/G3ROG-DARK-current-spec-2026-10-28.md",
     "docs/machines/g3rog-dark/specs/G3ROG-DARK-showcase-spec-2026-05-08.md",
     "docs/machines/g3rog-dark/specs/G3ROG-DARK-actual-spec-2026-05-08.md",
     "docs/machines/g3rog-actual/README.md",

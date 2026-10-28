@@ -2,9 +2,19 @@
 
 **Build:** G3ROG-DARK
 **Board:** ASUS ROG Crosshair X870E Dark Hero
-**BIOS:** AMI UEFI 0804, dated 2026-04-09
-**AGESA:** ComboAm5PI 1.3.0.1
-**Source:** sanitized AIDA64 Report `AIDA64-Report-20260509_v2`
+**Current BIOS:** AMI UEFI 1103, firmware date 2026-09-18; installed 2026-10-28
+
+**Current source:** live Windows firmware inventory and verified profile-restore workflow
+
+**Detailed settings baseline:** sanitized AIDA64 Report `AIDA64-Report-20260509_v2` from BIOS 0804
+
+## October 2026 Firmware Update
+
+- BIOS 1103 was installed successfully on 2026-10-28.
+- The saved BIOS profile was restored from the dedicated USB backup after the update.
+- Windows subsequently enumerated the Ryzen 7 9850X3D as 8 cores / 16 logical processors, both display adapters as healthy, and all present Plug and Play devices as OK.
+- The RTX 5090 remained the primary GPU while the integrated AMD Radeon adapter continued supporting part of the multi-monitor layout.
+- A fresh public AGESA string and full post-update settings export were not captured, so this page does not infer them from the earlier BIOS 0804 report.
 
 ## Current Confirmed State
 
@@ -15,8 +25,8 @@
 | TPM | TPM 2.0 present, AMD vendor reported |
 | SMT | Restored to Auto / enabled; OS sees 16 logical processors |
 | CPU topology | Ryzen 7 9850X3D, 8 cores / 16 logical processors |
-| Memory profile | DDR5-6200 effective |
-| Primary memory timings | CL32-38-38-80, command rate 1T |
+| Memory profile | BIOS profile restored; DDR5-6200 was the May 2026 observed baseline |
+| Primary memory timings | CL32-38-38-80, command rate 1T in the May 2026 observed baseline |
 | GPU link | RTX 5090 at PCIe 5.0 x16 @ x16 |
 | Hypervisor flag | Present in CPUID |
 
@@ -33,7 +43,7 @@ The important corrected setting is SMT. A previous BIOS-side configuration left 
 
 ## Memory Notes
 
-The current runtime memory profile is DDR5-6200 CL32-38-38-80 1T. This is above the kit's nominal DDR5-6000 profile and should be treated as a tuned configuration that needs long-session validation rather than a guaranteed default.
+The May 2026 runtime profile was DDR5-6200 CL32-38-38-80 1T. The saved profile was restored after BIOS 1103, but a new public timing capture was not collected during the October maintenance pass. Treat the May values as the detailed baseline until the next sanitized AIDA64 or HWiNFO capture.
 
 Recommended validation after BIOS changes:
 
@@ -55,4 +65,4 @@ Recommended validation after BIOS changes:
 - Confirm DDR5-6200 CL32 1T is stable across cold boots and long sessions.
 - Confirm the RTX 5090 remains at PCIe 5.0 x16 under GPU load.
 - Confirm the 10GbE controller negotiates at the intended link rate with the network equipment.
-- Capture a new sanitized BIOS profile export after future tuning changes.
+- Capture a new sanitized BIOS/AGESA and memory-timing export for BIOS 1103.
